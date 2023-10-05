@@ -1,0 +1,24 @@
+# Install Ref
+# 
+# https://www.youtube.com/watch?v=2Acht_5_HTo
+# https://www.youtube.com/watch?v=Zx2MHdRgAIc
+# https://github.com/mrdbourke/pytorch-apple-silicon
+
+# download this
+# https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+
+chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
+sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+source ~/miniforge3/bin/activate
+
+mkdir tensorflow-test
+cd tensorflow-test
+
+conda create --prefix ./env python=3.11
+# conda remove --prefix ./env --all
+conda activate ./env
+conda env list
+
+conda install jupyter pandas numpy seaborn matplotlib scikit-learn tensorflow
+
+conda env export > environment.yml
