@@ -1,0 +1,5 @@
+embeddings {
+  tensor_name: "hk01 article tags"
+  tensor_path: "tensor.tsv"
+  metadata_path: "metadata.tsv"
+}

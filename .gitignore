@@ -1,1 +1,4 @@
 env
+
+tensorboard/logs/metadata.tsv
+tensorboard/logs/tensor.tsv
